@@ -68,7 +68,7 @@ class App(customtkinter.CTk):
                                                 command=self.set_ID_event)
         self.button_3.grid(pady=(0, 0), padx=(20, 20), row=2, column=0)
         
-        sensors_array = genfromtxt('Files/sensors_positions.csv',delimiter=',')
+        sensors_array = genfromtxt('data/sensors_positions.csv',delimiter=',')
         val = []
         for i in range(len(sensors_array)):
             val.append("ID#"+str(i+1))
@@ -139,17 +139,17 @@ class App(customtkinter.CTk):
             pass
         else:
             self.flag = 1
-            sensors_array = genfromtxt('Files/sensors_positions.csv',delimiter=',')
+            sensors_array = genfromtxt('data/sensors_positions.csv',delimiter=',')
             #self.map_widget.set_position(40.343140, 22.595897)  #AFS's premises
             
             #read UAV initial positions
-            UAVinit_array = genfromtxt('Files/uav_initial_position.csv',delimiter=',')
+            UAVinit_array = genfromtxt('data/uav_initial_position.csv',delimiter=',')
             
             #first we delete the initial ID (red) markers
             for marker in self.marker_list:
                 marker.delete()
                 
-            cell_centers = genfromtxt('Files/cell_centers.csv',delimiter=',')
+            cell_centers = genfromtxt('data/cell_centers.csv',delimiter=',')
             
             #distances among IDs and cell centers
             ID_cell_distances = np.zeros((len(sensors_array), len(cell_centers)))
@@ -175,7 +175,7 @@ class App(customtkinter.CTk):
             ###########   UAVs ###################
             
             #read UAV-cell assignment
-            uavs_array = genfromtxt('Files/uavs.csv',delimiter=',')
+            uavs_array = genfromtxt('data/uavs.csv',delimiter=',')
             df2 = np.zeros((4, 1)) # number of UAVs within each cluster
             for cluster in range(1,5):
                 
@@ -249,7 +249,7 @@ class App(customtkinter.CTk):
         
         self.flag2 = 1
         #read the field boundaries and plot them
-        field_boundaries_array = genfromtxt('Files/field_boundaries.csv',delimiter=',')
+        field_boundaries_array = genfromtxt('data/field_boundaries.csv',delimiter=',')
         self.polygon = self.map_widget.set_polygon([(field_boundaries_array[0,0], field_boundaries_array[0,1]),
                                     (field_boundaries_array[1,0], field_boundaries_array[1,1]),
                                     (field_boundaries_array[2,0], field_boundaries_array[2,1]),
@@ -258,13 +258,13 @@ class App(customtkinter.CTk):
                                    name="polygon")
         
         #read sensors positions
-        sensors_array = genfromtxt('Files/sensors_positions.csv',delimiter=',')
+        sensors_array = genfromtxt('data/sensors_positions.csv',delimiter=',')
         #create list with sensors and set markers
         for i in range (0,len(sensors_array)):
             self.marker_list.append(self.map_widget.set_marker(sensors_array[i,0], sensors_array[i,1], text="ID#"+str(i+1), font=10))
             
         #read UAV initial positions
-        UAVinit_array = genfromtxt('Files/uav_initial_position.csv',delimiter=',')
+        UAVinit_array = genfromtxt('data/uav_initial_position.csv',delimiter=',')
         #create list with UAVs init. positions and set markers
         for j in range (0,len(UAVinit_array)):
             self.UAVinit_list.append(self.map_widget.set_marker(UAVinit_array[j,0], UAVinit_array[j,1], text="UAV#"+str(j+1), marker_color_outside="black", marker_color_circle="white"))
@@ -305,12 +305,12 @@ class App(customtkinter.CTk):
         self.mainloop()
     
     def set_UAV_current_pos(self, UAV_traj_x, UAV_traj_y,i):
-        uavs_array = genfromtxt('Files/uavs.csv',delimiter=',')
+        uavs_array = genfromtxt('data/uavs.csv',delimiter=',')
         ii=-1
         for marker in self.UAVcurrent_list:
             marker.delete()
             
-        uavs_array = genfromtxt('Files/uavs.csv',delimiter=',')
+        uavs_array = genfromtxt('data/uavs.csv',delimiter=',')
         for ii in range (0,len(uavs_array)): 
               if uavs_array[ii,1]==1:
                   self.UAVcurrent_list.append(self.map_widget.set_marker(UAV_traj_x[ii,i], UAV_traj_y[ii,i], text="UAV#"+str(ii+1), marker_color_outside="blue", marker_color_circle="white"))
@@ -326,9 +326,9 @@ class App(customtkinter.CTk):
         self.mainloop()
         
     def create_window(self, ID: str):
-        sensors_array = genfromtxt('Files/sensors_positions.csv',delimiter=',')
-        sensors_energy_demand = 1000*genfromtxt('Files/sensors_energy_demand.csv',delimiter=',')
-        sensors_energy_delivered = 1000*genfromtxt('Files/sensors_energy_delivered.csv',delimiter=',')
+        sensors_array = genfromtxt('data/sensors_positions.csv',delimiter=',')
+        sensors_energy_demand = 1000*genfromtxt('data/sensors_energy_demand.csv',delimiter=',')
+        sensors_energy_delivered = 1000*genfromtxt('data/sensors_energy_delivered.csv',delimiter=',')
 
         for i in range(len(sensors_array)):
             if ID == "ID#"+str(i+1):

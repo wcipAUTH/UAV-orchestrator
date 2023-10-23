@@ -17,7 +17,7 @@ U = 8;
 C = 4;
 
 %read positions from .csv file
-ID_positions = readmatrix('Files\sensors_positions.csv');
+ID_positions = readmatrix('data\sensors_positions.csv');
 
 %number of IoT devices (IDs)
 N = length(ID_positions);
@@ -44,7 +44,7 @@ x = 600;
 y = 700;
 
 %initial position of UAVs
-UAV_pos = readmatrix('Files\UAV_initial_position.csv');
+UAV_pos = readmatrix('data\UAV_initial_position.csv');
 U = length(UAV_pos);
 
 %cell center position
@@ -99,7 +99,7 @@ e = Time2ReachNeighbor*Flying_cons/3600; %Transit cost for a ID to ID movement (
 
 %energy demands of IDs in Wh
 E_d = 0.03*rand(1,N);
-writematrix(E_d','Files\sensors_energy_demand.csv');    
+writematrix(E_d','data\sensors_energy_demand.csv');    
 % for i=1:N
 %     %give more energy demand in certain cells
 %     if ID_cellAssociation(i)==randi(C) | ID_cellAssociation(i)==randi(C)
@@ -199,7 +199,7 @@ for i=1:U
         end
     end
 end
-writematrix(Assignment_csv,'Files\uavs.csv');         
+writematrix(Assignment_csv,'data\uavs.csv');         
 
 %%%%%%%%%%%%%%%  BENCHMARK SCHEMES %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%  BENCHMARK SCHEMES %%%%%%%%%%%%%%%%%%%%%%
@@ -283,7 +283,7 @@ for i=1:N
 end
 
 %save .csv file of the delivered energy
-writematrix(sensors_energy_delivered','Files\sensors_energy_delivered.csv'); 
+writematrix(sensors_energy_delivered','data\sensors_energy_delivered.csv'); 
 
 Assignment_csv
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

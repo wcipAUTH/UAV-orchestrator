@@ -35,7 +35,7 @@ antennaGain = 29000/theta^2;      %antenna gain
 
 %%%%%%%%%%% Real implementation %%%%%%%%%%%%%%%
 %read positions from .csv file
-ID_positions = readmatrix('Files\sensors_positions.csv');
+ID_positions = readmatrix('data\sensors_positions.csv');
 origin = [40.343278, 22.595930, 0];
 
 for i = 1:length(ID_positions)
