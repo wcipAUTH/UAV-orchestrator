@@ -4,4 +4,5 @@ The UAV-orchestrator undetakes the task to orchestrate a swarm of UAVs to wirele
 
 This repository contains the code for simulating a part of the paper: https://ieeexplore.ieee.org/abstract/document/10275044.
 
-Also, a GUI is included ([emulator_dashboard.py]()), which visualises the orchestration of the UAVs into the field of interest.
+Also, a GUI is included ([emulator_dashboard.py](UAV-orchestrator
+/emulator_dashboard.py)), which visualises the orchestration of the UAVs into the field of interest.
