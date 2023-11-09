@@ -7,5 +7,10 @@ This repository contains the code for simulating a part of the paper: https://ie
 Also, a GUI is included ([emulator_dashboard.py](https://github.com/wcipAUTH/UAV-orchestrator/blob/main/emulator_dashboard.py)), which visualises the orchestration of the UAVs into the field of interest.
 
 ## Orchestration algorithm
+![image](https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/dbe0d058-68b7-48ad-bc17-2dee809f9267)
+
+
+
+
 
 ## GUI
