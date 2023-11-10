@@ -4,7 +4,7 @@ The **Orchestration of Intelligent UAVs Swarm** undetakes the task of orchestrat
 
 This repository contains the code for simulating a part of the paper: https://ieeexplore.ieee.org/abstract/document/10275044. In the paper, the modeling of the system is thoroughly discussed.
 
- A visual abstract representation of the main components is given below
+ A visual abstract representation of the **Orchestration of Intelligent UAVs Swarm** mechanism is given below.
 
 <img width="563" alt="structure" src="https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/f086612f-66e6-49e7-b658-450c0795b907">
 
