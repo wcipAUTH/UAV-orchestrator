@@ -23,7 +23,7 @@ The GUI, `emulator_dashboard.py`,  is a user-friendly visualization which depict
 Among others, somw basic functionalities of the GUI are described below. By pressing the “Devices' locations” button, the positions of the sensors and the UAVs appear into the field of interest, which is highlighted with boundaries. Moreover, each sensor and UAV is associated with an identity which is visible to the user, as depicted below
 
 <p align="center">
-<img width="860" alt="image" src="https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/dde47fc6-3495-4e90-b698-13651ea09848">
+<img width="560" alt="image" src="https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/dde47fc6-3495-4e90-b698-13651ea09848">
 </p>
 
 At first, all sensors (ID) are denoted with a red marker, while the UAVs with a black marker and white inner circle. By pressing the “Run UAV Orchestrator” button, each UAV is relocating towards the vicinity of the sensors that is assigned to charge. Sensors that now match the new color of each UAV are being recharged by the corresponding UAVs, as depicted below.
