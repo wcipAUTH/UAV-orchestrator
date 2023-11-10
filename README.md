@@ -13,7 +13,7 @@ This repository contains the code for simulating a part of the paper: https://ie
 
 The above blocks of data generation, simulated model, and UAV-orchestration algorithm are included in `orchestration_algorithm.m` and `orchestration_algorithm_given_position.m`.
 The former file generates random initializations of the system, while the latter receives the initial parameters (e.g., location of UAVs and sensors) by the user.
-The output of the `orchestration_algorithm_given_position.m` is the assignemnt of the UAVs to charge specific sensors into the field of interest. This result is fed to the GUI, which produces a visual representation of the system.
+The output of the `orchestration_algorithm_given_position.m` is the assignment of the UAVs to charge specific sensors into the field of interest. This result is fed to the GUI, which produces a visual representation of the system.
 
 ## GUI
 The GUI, `emulator_dashboard.py`,  is a user-friendly visualization which depicts the final and the initial UAVs positions, as well as the final energy coverage that the UAVs provide to the sensors. 
