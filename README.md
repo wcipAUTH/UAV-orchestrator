@@ -6,7 +6,9 @@ This repository contains the code for simulating a part of the paper: https://ie
 
  A visual abstract representation of the **Orchestration of Intelligent UAVs Swarm** mechanism is given below.
 
-<img align="left" width="100" height="100" src="https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/f086612f-66e6-49e7-b658-450c0795b907">
+<p align="center">
+<img width="100" height="100" src="https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/f086612f-66e6-49e7-b658-  450c0795b907">
+</p>
 
 
 ## Orchestration algorithm
