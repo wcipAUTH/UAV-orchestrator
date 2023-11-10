@@ -20,7 +20,7 @@ The output of the `orchestration_algorithm_given_position.m` is the assignment o
 ## GUI
 The GUI, `emulator_dashboard.py`,  is a user-friendly visualization which depicts the final and the initial UAVs positions, as well as the final energy coverage that the UAVs provide to the sensors. 
 
-Among others, somw basic functionalities of the GUI are described below. By pressing the “Devices' locations” button, the positions of the sensors and the UAVs appear into the field of interest, which is highlighted with boundaries. Moreover, each sensor and UAV is associated with an identity which is visible to the user, as depicted below
+Among others, some basic functionalities of the GUI are described below. By pressing the “Devices' locations” button, the positions of the sensors and the UAVs appear into the field of interest, which is highlighted with boundaries. Moreover, each sensor and UAV is associated with an identity which is visible to the user, as depicted below
 
 <p align="center">
 <img width="560" alt="image" src="https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/dde47fc6-3495-4e90-b698-13651ea09848">
