@@ -13,8 +13,7 @@ This repository contains the code for simulating a part of the paper: https://ie
 
 The above blocks of data generation, simulated model, and UAV-orchestration algorithm are included in `orchestration_algorithm.m` and `orchestration_algorithm_given_position.m`.
 The former file generates random initializations of the system, while the latter receives the initial parameters (e.g., location of UAVs and sensors) by the user.
-
-The second block describes the simulated environment, which receives the initialization as an input. Given the simulated environment, the UAV orchestration algorithm follows, which is depicted in the third block. The latter was developed based on the solid mathematical, and outputs the optimal UAV-IoT devices assignment subject to the given parameters. Two orchestration algorithms are available. The first is based on linear programming, and the latter on game theory, and specifically matching with externalities.
+The output of the `orchestration_algorithm_given_position.m` is the assignemnt of the UAVs to charge specific sensors into the field of interest. This result is fed to the GUI, which produces a visual representation of the system.
 
 ## GUI
 The GUI, `emulator_dashboard.py`,  is a user-friendly visualization which depicts the final and the initial UAVs positions, as well as the final energy coverage that the UAVs provide to the sensors. 
