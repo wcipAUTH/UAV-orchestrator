@@ -20,12 +20,12 @@ The output of the `orchestration_algorithm_given_position.m` is the assignment o
 ## GUI
 The GUI, `emulator_dashboard.py`,  is a user-friendly visualization which depicts the final and the initial UAVs positions, as well as the final energy coverage that the UAVs provide to the sensors. 
 
-By pressing the “Devices locations” button, the positions of the sensors and the UAVs appear into the field of interest, which is highlighted with boundaries. Moreover, each sensor and UAV is associated with an identity which is visible to the user, as depicted below
+Among others, somw basic functionalities of the GUI are described below. By pressing the “Devices' locations” button, the positions of the sensors and the UAVs appear into the field of interest, which is highlighted with boundaries. Moreover, each sensor and UAV is associated with an identity which is visible to the user, as depicted below
 
 ![image](https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/52b007c7-847d-4130-b3cd-99d9c766b4f9)
 
-At first, all IoT nodes are red, while all UAVs are black. By pressing the “Run UAV Orchestrator” button, each UAV is relocating towards the vicinity of the sensors that is assigned to charge. Sensors that now match the new color of each UAV are being recharged by the corresponding UAVs, as depicted below
+At first, all sensors (ID) are denoted with a red marker, while the UAVs with a black marker and white inner circle. By pressing the “Run UAV Orchestrator” button, each UAV is relocating towards the vicinity of the sensors that is assigned to charge. Sensors that now match the new color of each UAV are being recharged by the corresponding UAVs, as depicted below.
 
 ![image](https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/70ca6054-1ac1-44c1-80e7-70bd5f9cd993)
 
-Finally, the user can reset the environment by pressing the “Reset” button. In this stage, only the energy requirement of the sensors are visible to the user, as the assignment of the UAVs has not been initiated yet. 
+Finally, the user can reset the environment by pressing the “Reset” button. In this stage, only the energy requirements of the sensors are visible to the user, as the assignment of the UAVs has not been initiated yet. 
