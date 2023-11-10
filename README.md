@@ -4,7 +4,7 @@ The UAV-orchestrator undetakes the task to orchestrate a swarm of UAVs to wirele
 
 This repository contains the code for simulating a part of the paper: https://ieeexplore.ieee.org/abstract/document/10275044. In the paper, the modeling of the system is thoroughly discussed.
 
-Also, a GUI is included `emulator_dashboard.py`, which visualises the orchestration of the UAVs into the field of interest. A visual abstract representation of the main components is given below
+ A visual abstract representation of the main components is given below
 
 <img width="563" alt="structure" src="https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/f086612f-66e6-49e7-b658-450c0795b907">
 
@@ -17,7 +17,7 @@ The former file generates random initializations of the system, while the latter
 The second block describes the simulated environment, which receives the initialization as an input. Given the simulated environment, the UAV orchestration algorithm follows, which is depicted in the third block. The latter was developed based on the solid mathematical, and outputs the optimal UAV-IoT devices assignment subject to the given parameters. Two orchestration algorithms are available. The first is based on linear programming, and the latter on game theory, and specifically matching with externalities.
 
 ## GUI
-The GUI is a user-friendly visualization which depicts the final and the initial UAVs positions, as well as the final energy coverage that the UAVs provide to the sensors. The GUI is based on the custom tkinter library. 
+The GUI, `emulator_dashboard.py`,  is a user-friendly visualization which depicts the final and the initial UAVs positions, as well as the final energy coverage that the UAVs provide to the sensors. 
 
 By pressing the “Devices locations” button, the positions of the sensors and the UAVs appear into the field of interest, which is highlighted with boundaries. Moreover, each sensor and UAV is associated with an identity which is visible to the user, as depicted below
 
