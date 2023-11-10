@@ -11,8 +11,8 @@ Also, a GUI is included `emulator_dashboard.py`, which visualises the orchestrat
 
 ## Orchestration algorithm
 
-The above blocks of data generation, simulated environment, and UAV-orchestration algorithm are included in
-The initial blocks define the simulated model and environment. This includes defining the field's dimensions, sensor locations, initial UAV positions, and other relevant parameters, which are given as inputs to the orchestration algorithm. The input parameters can be either real-time data, given as a .csv file, or any other format, or simulated data. Both options are supported.
+The above blocks of data generation, simulated model, and UAV-orchestration algorithm are included in `orchestration_algorithm.m` and `orchestration_algorithm_given_position.m`.
+The former file generates random initializations of the system, while the latter receives the initial parameters (e.g., location of UAVs and sensors) by the user.
 
 The second block describes the simulated environment, which receives the initialization as an input. Given the simulated environment, the UAV orchestration algorithm follows, which is depicted in the third block. The latter was developed based on the solid mathematical, and outputs the optimal UAV-IoT devices assignment subject to the given parameters. Two orchestration algorithms are available. The first is based on linear programming, and the latter on game theory, and specifically matching with externalities.
 
