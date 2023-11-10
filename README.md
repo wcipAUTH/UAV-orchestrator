@@ -10,7 +10,7 @@ Also, a GUI is included ([emulator_dashboard.py](https://github.com/wcipAUTH/UAV
 
 
 ## Orchestration algorithm
-The UAV orchestrator is a versatile framework designed for the efficient orchestration of a UAV swarms in supporting wireless power transfer within IoT devices and the promoting green energy practices in precision agriculture. 
+
 
 The initial component of the UAV emulator defines the simulated model and environment. This includes defining the field's dimensions, sensor locations, initial UAV positions, and other relevant parameters, which are given as inputs to the orchestration algorithm. The input parameters can be either real-time data, given as a .csv file, or any other format, or simulated data. Both options are supported.
 
