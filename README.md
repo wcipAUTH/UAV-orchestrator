@@ -28,6 +28,8 @@ Among others, somw basic functionalities of the GUI are described below. By pres
 
 At first, all sensors (ID) are denoted with a red marker, while the UAVs with a black marker and white inner circle. By pressing the “Run UAV Orchestrator” button, each UAV is relocating towards the vicinity of the sensors that is assigned to charge. Sensors that now match the new color of each UAV are being recharged by the corresponding UAVs, as depicted below.
 
-![image](https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/70ca6054-1ac1-44c1-80e7-70bd5f9cd993)
+<p align="center">
+<img width="560" alt="image" src="https://github.com/wcipAUTH/UAV-orchestrator/assets/148755699/9ba251cd-e8e8-4c16-9c44-f62c3a03db7f">
+</p>
 
 Finally, the user can reset the environment by pressing the “Reset” button. In this stage, only the energy requirements of the sensors are visible to the user, as the assignment of the UAVs has not been initiated yet. 
